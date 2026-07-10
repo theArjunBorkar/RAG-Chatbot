@@ -1,0 +1,32 @@
+# Python
+venv/
+backend/venv/
+__pycache__/
+*.pyc
+
+# Environment
+.env
+backend/.env
+
+# Chroma
+backend/chroma_db/
+
+# Node
+frontend/node_modules/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Build
+dist/
+build/
+
+# Databases
+*.db
+
+# Docker
+*.log
+build.log

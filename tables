@@ -1,0 +1,77 @@
+\du
+create database rag_chatbot;
+create user rag_user with password 'postgres';
+grant all privileges on database rag_chatbot to rag_user;
+\q
+delete database rag_chatbot
+;
+delete database rag_chatbot;
+show databases;
+\l
+drop database rag_chatbot
+;
+create database rag_chatbot;
+drop database rag_chatbot
+;
+drop database ragchat;
+create database ragchat;
+create user raguser with password 'password123';
+grant all privileges on database ragchat to raguser;
+\q
+GRANT ALL PRIVILEGES ON DATABASE ragchat TO raguser;
+\c ragchat
+GRANT ALL ON SCHEMA public TO raguser;
+ALTER SCHEMA public OWNER TO raguser;
+\q
+\l
+drop database ragchat;
+create database ragchatbot;
+CREATE USER raguser WITH PASSWORD 'password123';
+add user raguser to ragchatbot with password 'pssword123'
+;
+drop user raguser
+;
+CREATE USER raguser WITH PASSWORD 'password123';
+GRANT ALL PRIVILEGES ON DATABASE ragchatbot TO raguser;
+\q
+GRANT ALL ON SCHEMA public TO raguser;
+\q
+show databases;
+show dbs;
+show db;
+\c ragchatbot;
+show tables;
+\s tables;
+\l
+\c ragchatbot
+SELECT datname, pg_catalog.pg_get_userbyid(datdba)
+FROM pg_database
+WHERE datname='ragchatbot';
+ALTER DATABASE ragchatbot OWNER TO raguser;
+\c ragchatbot
+GRANT ALL ON SCHEMA public TO raguser;
+ALTER SCHEMA public OWNER TO raguser;
+\c ragchatbot
+\d chat_history
+DROP TABLE chat_history;
+DROP TABLE chat_sessions;
+Base.metadata.create_all(bind=engine)
+;
+TRUNCATE TABLE users RESTART IDENTITY CASCADE;
+DELETE FROM users;
+]\c users
+TRUNCATE TABLE users RESTART IDENTITY CASCADE;
+DELETE FROM users;
+\s users
+DELETE FROM users;
+\c users
+\c ragchatbot
+delete from users
+;
+TRUNCATE TABLE users RESTART IDENTITY CASCADE;
+select current_user
+;
+\s ragchatbot
+\c ragchat
+\c ragchatbot
+\s tables;
